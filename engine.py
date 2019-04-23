@@ -9,5 +9,8 @@ class StockfishPlayer(object):
         result = self._engine.go(movetime=self.level)
         return result.bestmove
 
+    def test(self):
+        return True
+
 if __name__=="engine":
     from chess import uci
